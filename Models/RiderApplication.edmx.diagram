@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f173b2d30c1c42dda4ec67ae23d35802" Name="Diagram1">
+        <EntityTypeShape EntityType="DatabaseModel.CarDetail" Width="1.5" PointX="7.375" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.CarPlacement" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Owner" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Reservation" Width="1.5" PointX="7.625" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.Rider" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabaseModel.User" Width="1.5" PointX="0.75" PointY="3.25" IsExpanded="true" />
+        <AssociationConnector Association="DatabaseModel.FK_CarPlacement_ToCarDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_CarPlacement_ToOwner" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_Reservation_ToCarPlacement" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_Owner_ToUser" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_Reservation_ToRider" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabaseModel.FK_Rider_ToRider" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
